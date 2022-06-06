@@ -1,0 +1,45 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "jest": true
+    },
+    "extends": [
+        // "react-app",
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "prettier"
+    ],
+    "rules": {
+        "no-console": "warn",
+        "prettier/prettier": [
+            "error", {
+                "endOfLine": "auto"
+            }
+        ],
+        "import/order":[
+            "warn",
+            {
+                "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+                "newlines-between": "always-and-inside-groups"
+            }
+        ]
+    },
+    "settings": {
+        "react": {
+          "version": "detect"
+        }
+      }
+}

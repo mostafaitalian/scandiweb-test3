@@ -1,0 +1,15 @@
+.cancel-container{
+    display: inline-flex;
+}
+
+.span1, .span2{
+    width: 15px;
+    height: 2px;
+    background-color: black;
+}
+
+.span1{
+    transform: rotate(45deg) translateY(-5px) translateX(5px);}
+.span2{
+    transform: translateX(-8px) rotate(-45deg);}
+
